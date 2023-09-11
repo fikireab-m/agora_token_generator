@@ -1,0 +1,21 @@
+{
+  "name": "agora-token-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index"
+  },
+  "author": "Fikireab",
+  "license": "ISC",
+  "dependencies": {
+    "agora-token": "^2.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
