@@ -1,10 +1,12 @@
 const express = require("express");
+const cors = require("cors");
 
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 
-app.use('/', function (req, res) {
+app.get('/', function (req, res) {
     res.status(201).send('Agora Token generator');
 });
 
