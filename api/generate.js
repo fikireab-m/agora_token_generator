@@ -6,8 +6,8 @@ const { RtcTokenBuilder, RtmTokenBuilder, RtcRole, RtmRole } = require('agora-to
 
 
 router.get("/", asyncHandler(async (req, res) => {
-    const appId = process.env.AGORA_APP_ID || 'bfbe4ba995b54b1885f3a36881a30f66';
-    const appCertificate = process.env.AGORA_APP_CERTIFICATE || '1acdd37a31a246698197f749b9ecef2a';
+    const appId = process.env.AGORA_APP_ID;
+    const appCertificate = process.env.AGORA_APP_CERTIFICATE;
     const channel = req.query.channel;
     const uid = req.query.uid;
     const userAccount = req.user || 'test_user_id';
