@@ -9,11 +9,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
-app.get('/', function (req, res) {
-    res.status(201).send('Agora Token generator');
-});
+// app.get('/', function (req, res) {
+//     res.status(201).send('Agora Token generator');
+// });
 
-app.get("/api", asyncHandler(async (req, res) => {
+app.get("/", asyncHandler(async (req, res) => {
     const appId = process.env.AGORA_APP_ID;
     const appCertificate = process.env.AGORA_APP_CERTIFICATE;
     const channel = req.query.channel;
